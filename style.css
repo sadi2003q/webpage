@@ -194,7 +194,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    background-image: url(.p1.png);
+    background-image: url(p1.png);
     background-size: cover;
 }
 
