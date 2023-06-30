@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(211, 211, 211);
+}
+#navbar{
+    
+    display: flex;
+    height: 100px;
+    width: 100%;
+    border-radius: 12px;
+    /* background-color: rgb(64, 108, 125); */
+    /* background: linear-gradient(45deg, red, blue); */
+    background: linear-gradient(135deg, white 50%, black 50%);
+
+}
+#logomargin{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    height: 50px;
+    width: 100px;
+    border-radius: 100%;
+    border-top: 5px solid forestgreen;
+    justify-content: center;
+    align-items: center;
+    scale: 1.5;
+}
+#logo{
+    font-size: x-large;
+    color: red;
+    font-weight: 900;
+    font-style: oblique;
+    
+}
+#logo:hover {
+    animation: logoanimation 0.5s  ease-in-out 0s 1 normal ;
+    
+    color: white(31, 223, 207);
+    scale: 1.3;
+}
+@keyframes logoanimation {
+    from {
+        scale: 1;
+        color: white;
+    }
+    to {
+        scale: 1.3;
+        color: white(31, 223, 207);
+        
+    }
+}
+#navoption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    color: white;
+}
+.Navoption{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    scale: 1.3;
+    display: inline-block;
+    margin-left: 60px;
+    font-size: larger;
+}
+#lastsetting{
+    margin-right: 40px;
+}
+.Navoption:hover {
+    transform: scale(1.3);
+    border: 1px solid white;
+    color: black;
+    background-color: white;
+    transition: all .1s ease-in 0s;
+}
+#bc{
+    height: 500px;
+    width: 100%;
+    background: linear-gradient( white, black );
+}
+#servicebox{
+    display: flex;
+    justify-content: flex-end;
+    height: 500px;
+    width: 100%;
+    border-bottom-left-radius: 40%;
+    background-image:  url("serviceboximg.png") ,url("serviceboximg2.png");
+    background-position: left, right;
+    background-repeat: no-repeat;
+    box-shadow: 15px 20px 6px grey;
+}
+#serviceboxMessage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    line-height: 35px;
+    color: red;
+    font-weight: bolder;
+    height: 100%;
+    width: 45%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+#serviceboxMessage:hover{
+    animation: boxmessage 0.5s ease-in-out 0s 1 normal;
+   
+    color: black;
+}
+#serviceboxMessage:active{
+    color: white;
+}
+@keyframes boxmessage {
+    from {
+        color: white;
+        scale : 1;
+    }
+    to {
+        color: black;
+    }
+}
+#contectarea{
+    margin-top: 20px;
+    height: 3200px;
+    width: 100%;
+    
+}
+#container1, #container2, #container3, #container4{
+    display: flex;
+    margin-top: 20px;
+    height: 800px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 15px 20px 10px 10px gray;
+    
+}
+#container4, #container2{
+    background: linear-gradient(45deg, white 50%, black 50%);
+}
+#container3, #container1{
+    background: linear-gradient(45deg, black 50%, white 50%);
+    
+}
+#box1, #box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 45%;
+    /* border: 3px solid green; */
+    border-radius: 8%;
+    
+}
+#pizza, #burger, #drinks, #snacks, #dessert, #soups{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    
+}
+#box5, #box6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 45%;
+    border-radius: 8%;
+}
+#box4, #box3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 45%;
+    /* border: 3px solid green; */
+    border-radius: 8%;
+}
+#b1, #b2, #b3, #b4, #b5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 17%;
+    box-shadow: 15px 20px 10px gray;
+    border-radius: 8%;
+
+}
+
+#b1{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(p1.png);
+    background-size: cover;
+}
+
+#b1:hover,#b2:hover,#b3:hover,#b4:hover,#b5:hover{
+    animation: banimation 0.3s  ease-in-out 0s 1 normal ;
+    scale: 1.2;
+}
+#dec1,#dec2,#dec3,#dec4,#dec5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: red;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 9%;
+    /* background: linear-gradient(to bottom, rgba(251, 255, 0, 0.8), rgba(255, 255, 255, 0)); */
+    
+}
+.deca{
+    text-decoration: none;
+    color: yellow;
+    font-size: 50px;
+    font-weight: bolder;
+    
+}
+.deca:hover{
+    transition: all .5s ease-in-out 0s;
+    color: rgb(1, 183, 243);
+    border-top: 3px solid rgb(43, 0, 233);
+    border-radius: 50%;
+}
+
+#b2{
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    background-image: url(p2.png);
+    background-size: cover;
+}
+#b3{
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    background-image: url(p3.png);
+    background-size: cover;
+}
+#b4{
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+    background-image: url(p4.png);
+    background-size: cover;
+}
+#b5{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(p5.png);
+    background-size: cover;
+}
+@keyframes banimation{
+    from {
+        scale: 1;
+    } 
+    to{
+        scale :1.2;
+    }
+}
+@keyframes dec {
+    from {
+        height: 35%;
+        
+    }
+    to {
+        height: 55%;
+        
+    }
+}
+#box1:hover, #box2:hover, #box3:hover, #box4:hover, #box5:hover, #box6:hover{
+    animation:  boxAnimation 0.3s  ease-in-out 0s 1 normal ;
+    scale: 1.2;
+    background-color: blue;
+    color: white;
+    
+}
+#box1{
+    background-image: url("mainpizza.png");
+    background-size: cover;
+}
+#box1, #box2, #box3, #box4, #box5, #box6 {
+    box-shadow: 15px 20px 10px gray;
+}
+#box2{
+   background-image: url("mainburger.png");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    
+}
+#box3{
+    background-image: url("drinks.webp");
+    background-size: cover;
+}
+#box4{
+    background-image: url("snacks.webp");
+     background-size: cover;
+ }
+ #box5{
+    background-image: url("maindessert.png");
+    background-size: cover;
+}
+#box6{
+    background-image: url("soup.jpg");
+    background-size: cover;
+}
+#pizza:hover,  #burger:hover, #drinks:hover, #snacks:hover, #dessert:hover, #soups:hover{
+    transition: all .5s ease-in-out 0s;
+    color: white;
+    border-top: 3px solid white;
+    border-radius: 50%;
+}
+
+@keyframes boxAnimation{
+    from {
+        scale: 1;
+        
+    }
+    to {
+        scale: 1.2; 
+        background-color: blue;
+        color: white;
+    }
+}
+#concontain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(135deg, white 53.8%, black 46.2%);
+    color: white;
+
+}
+
+#fbox1, #fbox2, #fbox3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    line-height: 35px;
+    color: red;
+    font-weight: bolder;
+    width: 25%;
+    height: 80%;
+    background: linear-gradient(45deg, white 50%, black 50%);
+    box-shadow: 15px 20px 10px gray;
+    border-radius: 8%;
+}
+
+#fbox1:hover, #fbox2:hover, #fbox3:hover{
+    animation: banimation 0.3s  ease-in-out 0s 1 normal ;
+    scale: 1.2;
+}
+
+
+
